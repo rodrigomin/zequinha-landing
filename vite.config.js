@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/zequinha-landing/',
   plugins: [react()],
+  build: {
+    outDir: 'docs', // muda o build do dist para docs
+  },
 })
